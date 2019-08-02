@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [2,45,2,5,6,24,73];
+        var sum1 = 0 ;
+        var sum2 = 0 ;
+        var count1 = 0 ;
+        var count2 = 0 ;
+        for(var i = 0 ; i < arr.length ; i++){
+            if(arr[i] % 2 == 0){
+                count1 += arr[i];
+                sum1++;
+                
+            }
+            if(arr[i] % 2 == 1){
+                count2 += arr[i];
+                sum2++;
+               
+            }
+                
+        }
+        document.write("偶数和" + count1 + " ");
+                document.write("偶数个数" + sum1 + " ");
+                document.write("奇数和" + count2 + " ");
+                document.write("奇数" + sum2 + " ");
+    </script>
+</body>
+</html>

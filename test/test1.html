@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  var score = prompt("请输入您的成绩");
+    //  if(score < 60){
+    //      alert("建议再学一学")
+    //  }else if(score < 70){
+    //      alert("需要多努力")
+    //  }else if(score < 80){
+    //      alert("良好")
+    //  }else{
+    //      alert("优秀")
+    //  }
+
+
+    // var score = parseInt(prompt("请输入您的成绩") / 10);
+    // switch(score){
+    //     case 0 :
+    //     case 1 : 
+    //     case 2 :
+    //     case 3 :
+    //     case 4 :
+    //     case 5 : alert("建议再学一学") ; break ;
+    //     case 6 : alert("需要多努力"); break ;
+    //     case 7 : alert("良好") ; break ;
+    //     case 8 :
+    //     case 9 :
+    //     case 10 :alert( "优秀 ") ; break ;
+    // }
+
+
+
+    // var computer = parseInt(Math.random()*3 + 1);
+    // var player = parseInt(prompt("请输入您的出拳号码"));
+    // switch(computer){
+    //     case 1 : 
+    //         switch(player){
+    //             case 1 : alert("计算机出的是石头" + "您出的是石头" +": 平局"); break;
+    //             case 2 : alert("计算机出的是石头" + "您出的是剪刀" +": 计算机胜"); break;
+    //             case 3 : alert("计算机出的是石头" + "您出的是布" +": 您胜"); break;
+    //         }
+    //     break;
+    //     case 2 : 
+    //     switch(player){
+    //         case 1 : alert("计算机出的是剪刀" + "您出的是石头" +": 您胜"); break;
+    //         case 2 : alert("计算机出的是剪刀" + "您出的是剪刀" +": 平局"); break;
+    //         case 3 : alert("计算机出的是剪刀" + "您出的是布" +": 计算机胜"); break;
+    //     }
+    //     break;
+    //     case 3 : 
+    //     switch(player){
+    //         case 1 : alert("计算机出的是布" + "您出的是石头" +": 计算机胜"); break;
+    //         case 2 : alert("计算机出的是布" + "您出的是剪刀" +": 您胜"); break;
+    //         case 3 : alert("计算机出的是布" + "您出的是布" +": 平局"); break;
+    //     }
+    //     break;
+    // }
+
+    // var  i = 2;
+    // while(i < 10){
+    //     document.write("*" + "<br/>");
+    //     i++;
+    // }
+
+
+    // var i = 1 ;
+    // while(i <= 100){ 
+        
+    //     if(i % 2 == 1){
+    //         document.write(i + " ");
+            
+    //     }
+    //     i++;
+
+    // }
+    // var i = 10 ;
+    // do{
+    //     console.log(i);
+    //     i++;
+    //     }
+    // while( i >= 100);
+    // console.log(i)
+
+    // var sum = 0 ;
+    // for(var i = 1 ; i < 100; i ++){
+    //     sum += 1/i
+    // }
+    // console.log(sum)
+    // var sum = 0;
+    // for(var i = 1; i <= 100 ;i++){
+    //     if(i % 2 == 1){
+    //         sum += 1 / i;
+    //     }else{
+    //         sum -= 1 / i;
+    //     }
+    // }
+    // console.log(sum);
+
+
+    function Foo() {
+
+    getName = function () { alert (1); };
+
+    return this;
+
+    }
+
+    Foo.getName = function () { alert (2);};
+
+    Foo.prototype.getName = function () { alert (3);};
+
+    var getName = function () { alert (4);};
+
+    function getName() { alert (5);}
+
+
+
+    //请写出以下输出结果：
+
+    Foo.getName();//2
+
+    getName();//4
+
+    Foo().getName();//1
+
+    getName();//1
+
+    new Foo.getName();//3
+
+    new Foo().getName();//3
+
+    new new Foo().getName();
+    </script>
+</body>
+</html>

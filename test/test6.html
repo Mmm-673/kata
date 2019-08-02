@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var time = parseInt(prompt("请输入您的工作时长"));
+        var money = parseInt(prompt("请输入您的工资"));
+        
+        if(time >= 1 && time < 2){
+            if(money > 10000){
+                money = money * 1.7;
+                alert(money);
+            }else{
+                money = money * 1.5;
+                alert(money);
+            }
+        }else if(time >= 2){
+            if(money > 12000){
+                money = money * 3.2;
+                alert(money);
+            }else{
+                money = money * 3;
+                alert(money);
+            }
+        }else{
+            if(money > 8000){
+                money = money * 1.2;
+                alert(money);
+            }else{
+                alert(money);
+            }
+        }
+    </script>
+</body>
+</html>

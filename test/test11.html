@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("请输入一个自然数"));
+        var num2 = parseInt(prompt("请再次输入一个比上一个数大的自然数"));    
+        var sum1 = 0;
+        var sum2 = 0;
+        var count1 = 0;
+        var count2 = 0;
+        for(var i = num1 ; i <= num2 ; i ++){
+            if(i % 2 == 1){
+                sum1 += i;
+                count1++;
+            }else{
+                sum2 += i ;
+                count2++ ;
+            }
+        }
+        document.write("奇数和为" + sum1 + "奇数有" + count1 + "偶数和为" + sum2 + "偶数有" + count2 );
+    </script>
+</body>
+</html>
